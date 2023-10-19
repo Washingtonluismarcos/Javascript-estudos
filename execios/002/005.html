@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudos em Dom</title>
+  <style>
+    body {
+          
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(10, 62, 62);
+      color: azure;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando os estudos Dom</h1>
+  <p>Aqui vai o resuntado</p>
+  <p>Aprendendo a usar o <strong>Dom</strong> em Javascript.</p>
+  <div id="msg">Clique aqui</div>
+  <script>
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write(p1.innerText)
+    var d = window.document.getElementById('msg')
+    d.style.background = 'green'
+    d.innerText = 'Estou aguardando...'
+  </script>
+</body>
+</html>
